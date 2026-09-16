@@ -10,6 +10,15 @@ namespace _001_Schleifen
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Eingabe:");
+            string eingabe = Console.ReadLine();
+
+            char[] text = eingabe.ToArray();
+
+            for (int i = text.Length-1; i >= 0; i--)
+            {
+                Console.Write(text[i]);
+            }
         }
     }
 }
